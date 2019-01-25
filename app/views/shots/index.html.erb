@@ -5,7 +5,7 @@
         <div class="shot-wrapper">
 
         <%= link_to shot, class: "shot" do  %>
-          <%= image_tag(shot.user_shot_url) %>
+          <%= image_tag(shot.user_shot_url) unless shot.user_shot.blank?%>
           <div class="shot-data">
             <h3 class="shot-title"></h3>
             <div class="shot-description">
@@ -29,7 +29,7 @@
               <div class="level-item comments data">
                 <%= link_to shot do %>
                 <span class="icon "><i class="fa fa-comment"></i></span>
-                0
+                <%= shot.comments.count %>
                 <% end %>
               </div>
               <div class="level-item likes data">
