@@ -1,5 +1,7 @@
 ## [Dribble](https://dribbble.com/) Clone
 
+  Visit the deployed app [here](https://dribble-clone-aziz.herokuapp.com/)
+
 ### Following features are implemented in this app
 
 - Users can create, update, view and destroy shots
